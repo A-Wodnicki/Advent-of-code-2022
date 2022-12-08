@@ -1,27 +1,27 @@
 def main():
     with open('example.txt', 'r') as data:
-        """
+        '''
         Get all moves and responses
         For example: [['A', 'Y'], ['B', 'X'], ['C', 'Z']]
-        """
+        '''
         games = [x.split(' ') for x in data.read().splitlines()]
 
-    """
+    '''
     strat 1
     X - rock
     Y - paper
     Z - scissors
     My total: 9241
-    """
+    '''
     strat_1_score = 0
 
-    """
+    '''
     strat 2
     X - lose
     Y - draw
     Z - win
     My total: 14610
-    """
+    '''
     strat_2_score = 0
 
     rewards = {
